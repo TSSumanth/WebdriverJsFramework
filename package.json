@@ -1,0 +1,33 @@
+{
+  "name": "webdriverjsframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSSumanth/WebdriverJsFramework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSSumanth/WebdriverJsFramework/issues"
+  },
+  "homepage": "https://github.com/TSSumanth/WebdriverJsFramework#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.11.4",
+    "@types/selenium-webdriver": "^3.0.10",
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4",
+    "mochawesome": "^3.1.1",
+    "selenium-webdriver": "^3.6.0",
+    "supertest": "^3.4.2",
+    "ts-node": "^6.2.0",
+    "typescript": "^3.1.1"
+  }
+}
