@@ -28,7 +28,7 @@ async function funon(applicationurl:string,serverURL:string){
     await driver.close();
 }
 async function test(){
-await funon("https://www.google.com","");
+await funon("https://www.google.com","http://172.17.0.2:80");
 }
 test();
 
