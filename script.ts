@@ -4,8 +4,16 @@ let chrome = require('selenium-webdriver/chrome');
 let firefox = require('selenium-webdriver/firefox');
 let driver:WebDriver;
 
-async function funon(applicationurl:string){
+async function funon(applicationurl:string,serverURL:string){
     let corsOption = new chrome.Options();
+                //disable web security to bypass CORS issue
+    corsOption.addArguments("--disable-web-security");
+    corsOption.addArguments("--window-size=1400,1000");
+    driver = new Builder().forBrowser("chrome")
+                    .setChromeOptions(corsOption)
+                    .usingServer(serverURL)
+                    .build();
+    await driver.manage().window().maximize();
     corsOption.addArguments("--window-size=1400,1000");
      driver = new Builder().forBrowser("chrome")
         .setChromeOptions(corsOption)
@@ -20,7 +28,7 @@ async function funon(applicationurl:string){
     await driver.close();
 }
 async function test(){
-await funon("https://www.google.com");
+await funon("https://www.google.com","");
 }
 test();
 

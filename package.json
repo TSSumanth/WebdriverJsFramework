@@ -16,7 +16,7 @@
     "url": "https://github.com/TSSumanth/WebdriverJsFramework/issues"
   },
   "homepage": "https://github.com/TSSumanth/WebdriverJsFramework#readme",
-  "devDependencies": {
+  "dependencies": {
     "@types/chai": "^4.1.2",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.11.4",
