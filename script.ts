@@ -14,11 +14,7 @@ async function funon(applicationurl:string,serverURL:string){
                     .usingServer(serverURL)
                     .build();
     await driver.manage().window().maximize();
-    corsOption.addArguments("--window-size=1400,1000");
-     driver = new Builder().forBrowser("chrome")
-        .setChromeOptions(corsOption)
-        .build();
-    await driver.manage().window().maximize();
+   
     console.log("launchBrowser Chrome Browser launched");
 
     await driver.get(applicationurl);
@@ -28,7 +24,7 @@ async function funon(applicationurl:string,serverURL:string){
     await driver.close();
 }
 async function test(){
-await funon("https://www.google.com","http://172.17.0.2:80");
+await funon("https://www.google.com","");
 }
 test();
 
