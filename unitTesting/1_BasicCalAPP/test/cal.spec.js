@@ -1,4 +1,4 @@
-const cal = require('./../cal');
+const cal = require('../cal');
 
 //Passed Test
 if (cal.add(2, 3) == 5) {
@@ -19,5 +19,4 @@ else {
 const assert = require('assert');
 assert.equal(cal.multiply(2,3), 6, '2 * 3 is not equal to 6');
 
-assert.equal(cal.substract(2,3), -2, '2 - 3 is not equal to -1');
-
+assert.equal(cal.substract(2,3), -1, '2 - 3 is not equal to -1');

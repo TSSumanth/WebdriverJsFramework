@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:1_BasicCalAPP": "mocha ./unitTesting/1_BasicCalApp/mocha_tests"
   },
   "repository": {
     "type": "git",
