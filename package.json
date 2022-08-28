@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:1_BasicCalAPP": "mocha ./unitTesting/1_BasicCalApp/mocha_tests"
+    "test:1_BasicCalAPP": "mocha ./unitTesting/1_BasicCalApp/mocha_tests",
+    "test:mochaBSTests": "mocha ./mochatests --timeout 60000"
   },
   "repository": {
     "type": "git",
