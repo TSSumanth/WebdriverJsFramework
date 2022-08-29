@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:1_BasicCalAPP": "mocha ./unitTesting/1_BasicCalApp/mocha_tests",
-    "test:mochaBSTests": "mocha ./mochatests --timeout 60000"
+    "test:mochaBSTests": "mocha ./mochatests/ --timeouts 60000 --parallel  --jobs 5",
+    "test:CBT": "mocha ./crossBT/ --timeouts 60000"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
     "@types/selenium-webdriver": "^3.0.10",
     "axios": "^0.18.0",
     "chai": "^4.1.2",
-    "mocha": "^5.0.4",
+    "mocha": "^8.3.0",
     "mochawesome": "^3.1.1",
     "selenium-webdriver": "^3.6.0",
     "supertest": "^3.4.2",

@@ -2,7 +2,7 @@ const webdriver = require('selenium-webdriver')
 let utils = require('./utils')
 let driver;
 
-describe("Browser stack integration tests", async function () {
+describe("Browser stack integration tests 2 ", async function () {
 
     let capabilities = {
         'bstack:options': {
@@ -28,22 +28,22 @@ describe("Browser stack integration tests", async function () {
         utils.driver = driver;
     })
     
-    it("Google Test", async function () {
+    it("Google Test 2", async function () {
         await driver.get("https://google.com");
         console.log("The title for Google Home Page is: "+await driver.getTitle());
         // await utils.LogSuccess("Titile is retrived from google website");
     })
 
-    it("Orange HRM Test", async function () {
+    it("Orange HRM Test 2", async function () {
         await driver.get("https://orangehrm.com");
         console.log(await driver.getTitle());
         // await utils.LogSuccess("Titile is retrived from Orange HRM website");
     })
 
-    it("Amazon Test", async function () {
+    it("Amazon Test 3", async function () {
         await driver.get("https://amazon.in");
         console.log(await driver.getTitle());
-        throw Error("Unexpected Error");
+        
         // await utils.LogFailure("Titile is not retrived from Amazon website");
     })
 
