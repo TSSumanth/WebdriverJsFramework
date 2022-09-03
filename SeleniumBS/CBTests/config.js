@@ -5,7 +5,7 @@ let commonCapabilities = {
 };
 let capabilities = [
     {
-        'bstack:options': {
+        "bstack:options": {
             "os": "Windows",
             "osVersion": "10"
         },

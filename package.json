@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:1_BasicCalAPP": "mocha ./unitTesting/1_BasicCalApp/mocha_tests",
-    "test:mochaBSTests": "mocha ./mochatests/ --timeouts 60000 --parallel  --jobs 5",
-    "test:CBT": "mocha ./CBTests/ --timeouts 60000",
-    "test": "mocha ./mochaThis --timeouts 20000"
+   "regressionSuite": "mocha tests/* tests/*/*.js --timeouts 0 --parallel --jobs 2"
   },
   "repository": {
     "type": "git",
